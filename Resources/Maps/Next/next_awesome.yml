@@ -3,9 +3,9 @@ meta:
   category: Map
   engineVersion: 260.2.0
   forkId: syndicate-next
-  forkVersion: e0c2795162f61759b0d5c9de1399108ba5dd4ea1
-  time: 06/06/2025 13:02:18
-  entityCount: 24179
+  forkVersion: ef23d178d6524f931ce4385fea8d9c2e1fceabcf
+  time: 06/12/2025 05:50:44
+  entityCount: 24185
 maps:
 - 1
 grids:
@@ -6350,13 +6350,15 @@ entities:
             4: 49152
             1: 47
           -3,-6:
-            0: 3822
+            0: 1774
+            5: 2048
           -2,-8:
             0: 65382
           -2,-7:
             0: 4095
           -2,-6:
-            0: 4095
+            0: 3583
+            5: 512
           -2,-9:
             0: 24576
             1: 159
@@ -6439,7 +6441,7 @@ entities:
             1: 127
           2,-6:
             0: 29310
-            5: 128
+            6: 128
           2,-9:
             0: 4096
             1: 26127
@@ -6455,7 +6457,7 @@ entities:
             0: 53248
           3,-6:
             0: 63773
-            6: 1024
+            7: 1024
           4,-7:
             1: 240
             0: 28672
@@ -6743,22 +6745,22 @@ entities:
             0: 65008
           -10,-5:
             1: 4368
-            7: 52416
+            8: 52416
           -10,-9:
             0: 56586
           -10,-4:
             0: 4369
-            7: 52416
+            8: 52416
           -9,-8:
             0: 30583
           -9,-7:
             0: 28791
           -9,-5:
             0: 1
-            7: 30576
+            8: 30576
           -9,-4:
             0: 1
-            7: 30576
+            8: 30576
           -13,-4:
             0: 240
             1: 17412
@@ -6807,7 +6809,7 @@ entities:
             0: 56829
           6,3:
             0: 40413
-            8: 16384
+            9: 16384
           6,4:
             0: 7665
           7,1:
@@ -6870,7 +6872,7 @@ entities:
           4,8:
             0: 54203
           5,5:
-            7: 1648
+            8: 1648
             0: 8192
           5,6:
             0: 33791
@@ -8058,6 +8060,21 @@ entities:
           moles:
           - 0
           - 6666.982
+          - 0
+          - 0
+          - 0
+          - 0
+          - 0
+          - 0
+          - 0
+          - 0
+          - 0
+          - 0
+        - volume: 2500
+          temperature: 293.14975
+          moles:
+          - 20.078888
+          - 75.53487
           - 0
           - 0
           - 0
@@ -11926,7 +11943,7 @@ entities:
       pos: 12.5,-4.5
       parent: 2
     - type: Door
-      secondsUntilStateChange: -75563.07
+      secondsUntilStateChange: -76851.805
       state: Opening
     - type: DeviceLinkSource
       lastSignals:
@@ -11937,7 +11954,7 @@ entities:
       pos: 13.5,-4.5
       parent: 2
     - type: Door
-      secondsUntilStateChange: -75561.5
+      secondsUntilStateChange: -76850.234
       state: Opening
     - type: DeviceLinkSource
       lastSignals:
@@ -18803,13 +18820,6 @@ entities:
     components:
     - type: Transform
       pos: -11.310233,18.498312
-      parent: 2
-- proto: BoxBeanbag
-  entities:
-  - uid: 1470
-    components:
-    - type: Transform
-      pos: -10.457292,-23.382786
       parent: 2
 - proto: BoxBodyBag
   entities:
@@ -55664,13 +55674,6 @@ entities:
     - type: Physics
       canCollide: False
     - type: InsideEntityStorage
-- proto: ClothingShoesBling
-  entities:
-  - uid: 4286
-    components:
-    - type: Transform
-      pos: -4.46716,-21.245726
-      parent: 2
 - proto: ClothingShoesBootsLaceup
   entities:
   - uid: 3984
@@ -95314,17 +95317,22 @@ entities:
     - type: Physics
       canCollide: False
     - type: InsideEntityStorage
-- proto: GrenadeStinger
+- proto: GrenadeFoamDart
   entities:
-  - uid: 6575
+  - uid: 12422
     components:
     - type: Transform
-      pos: -10.396269,-22.727524
+      pos: -10.33952,-22.60551
       parent: 2
-  - uid: 6606
+  - uid: 15779
     components:
     - type: Transform
-      pos: -10.691667,-22.820286
+      pos: -10.33952,-22.496136
+      parent: 2
+  - uid: 24183
+    components:
+    - type: Transform
+      pos: -10.68327,-22.558636
       parent: 2
 - proto: Grille
   entities:
@@ -103360,6 +103368,13 @@ entities:
     - type: Transform
       pos: -6.5008383,18.589157
       parent: 15658
+- proto: IngotSilver
+  entities:
+  - uid: 1470
+    components:
+    - type: Transform
+      pos: -5.265167,-21.352613
+      parent: 2
 - proto: IntercomAll
   entities:
   - uid: 6865
@@ -104873,11 +104888,47 @@ entities:
     - type: Transform
       pos: -6.5,-21.5
       parent: 2
+    - type: EntityStorage
+      air:
+        volume: 200
+        immutable: False
+        temperature: 293.14673
+        moles:
+        - 1.7459903
+        - 6.568249
+        - 0
+        - 0
+        - 0
+        - 0
+        - 0
+        - 0
+        - 0
+        - 0
+        - 0
+        - 0
   - uid: 107
     components:
     - type: Transform
       pos: -8.5,-21.5
       parent: 2
+    - type: EntityStorage
+      air:
+        volume: 200
+        immutable: False
+        temperature: 293.14673
+        moles:
+        - 1.7459903
+        - 6.568249
+        - 0
+        - 0
+        - 0
+        - 0
+        - 0
+        - 0
+        - 0
+        - 0
+        - 0
+        - 0
 - proto: LockerHeadOfPersonnelFilled
   entities:
   - uid: 10281
@@ -105658,6 +105709,18 @@ entities:
     - type: Physics
       canCollide: False
     - type: InsideEntityStorage
+- proto: MagazineFoamBox
+  entities:
+  - uid: 604
+    components:
+    - type: Transform
+      pos: -10.448895,-23.38676
+      parent: 2
+  - uid: 6575
+    components:
+    - type: Transform
+      pos: -10.68327,-23.402386
+      parent: 2
 - proto: MailingUnit
   entities:
   - uid: 485
@@ -106269,6 +106332,11 @@ entities:
     components:
     - type: Transform
       pos: 15.5,44.5
+      parent: 2
+  - uid: 12420
+    components:
+    - type: Transform
+      pos: -9.5,-23.5
       parent: 2
   - uid: 15951
     components:
@@ -108379,7 +108447,7 @@ entities:
         Уважаемые члены руководства унатхов SLMG,
 
 
-        Докладываю о планируемой операции "Теневой Икс", целью которой является перераспределение финансовых средств, выделенных на строительство научной космической станции, с использованием подставного работника, именуемого Бета-Ру, внедрившегося в корпорацию Nanotrasen.
+        Докладываю о планируемой операции "Теневой Икс", целью которой является перераспределение финансовых средств, выделенных на строительство научной космической станции, с использованием подставного работника, именуемого Бета-Ру, внедрившегося в корпорацию Nanotrasen. 
 
 
         Бета-Ру продемонстрировал высокие навыки манипуляции и скрытой работы, что делает его идеальным кандидатом для выполнения данной миссии. Мы поставим перед ним задачу установить доверительные отношения с ключевыми фигурами в Nanotrasen и убедить их в необходимости выделения дополнительных ресурсов на проект, который на самом деле подразумевает лишь создание видимости активности.
@@ -108397,9 +108465,9 @@ entities:
         Ожидаю вашего одобрения и дальнейших указаний. Слаженная работа и соблюдение всех аспектов операции обеспечат ее успех.
 
 
-        С уважением,
+        С уважением,  
 
-        Командир операции "Теневой Икс"
+        Командир операции "Теневой Икс"  
 
         Имя Уша-Дар
 
@@ -108431,13 +108499,13 @@ entities:
         Заблаговременно обеспечив необходимые ресурсы, мы создадим диверсионную группу из наиболее опытных унатхов, которая будет отвечать за выполнение ключевых фаз операции. Особое внимание будет уделено созданию ложных сигналов и отвлекающих маневров, что позволит незаметно подойти к объекту.
 
 
-        Нельзя недооценивать необходимость в строгой секретности в процессе подготовки и осуществления операции. Каждое действие участников должно быть обдумано и аккуратно спланировано, чтобы исключить вероятность пробоя системы и возможного разоблачения замысла.
+        Нельзя недооценивать необходимость в строгой секретности в процессе подготовки и осуществления операции. Каждое действие участников должно быть обдумано и аккуратно спланировано, чтобы исключить вероятность пробоя системы и возможного разоблачения замысла. 
 
 
-        Приемка ядерной боеголовки под контроль позволит унатхам занять более крепкие позиции в межгалактических переговорах, а также значительно укрепить нашу власть и влияние на дальнейшие события в регионе.
+        Приемка ядерной боеголовки под контроль позволит унатхам занять более крепкие позиции в межгалактических переговорах, а также значительно укрепить нашу власть и влияние на дальнейшие события в регионе. 
 
 
-        Успех операции - это не только шаг к расширению нашей сферы влияния, но и залог безопасности нашей расы на многие годы вперед.
+        Успех операции - это не только шаг к расширению нашей сферы влияния, но и залог безопасности нашей расы на многие годы вперед. 
 
 
         Ожидаю вашего одобрения и дальнейших указаний по данному вопросу.
@@ -109270,6 +109338,18 @@ entities:
       rot: 1.5707963267948966 rad
       pos: -1.5,2.5
       parent: 15658
+  - uid: 24180
+    components:
+    - type: Transform
+      rot: 1.5707963267948966 rad
+      pos: -8.5,-23.5
+      parent: 2
+  - uid: 24181
+    components:
+    - type: Transform
+      rot: -1.5707963267948966 rad
+      pos: -6.5,-23.5
+      parent: 2
 - proto: PlasmaWindoorSecureCommandLocked
   entities:
   - uid: 14148
@@ -116275,12 +116355,6 @@ entities:
     - type: Transform
       rot: 3.141592653589793 rad
       pos: -5.5,-23.5
-      parent: 2
-  - uid: 15779
-    components:
-    - type: Transform
-      rot: 3.141592653589793 rad
-      pos: -21.5,-26.5
       parent: 2
   - uid: 20040
     components:
@@ -125910,22 +125984,22 @@ entities:
       parent: 2
 - proto: SpawnPointAtmos
   entities:
-  - uid: 12418
+  - uid: 6606
     components:
     - type: Transform
       pos: -21.5,-25.5
       parent: 2
-  - uid: 12420
+  - uid: 7256
     components:
     - type: Transform
       pos: -21.5,-26.5
       parent: 2
-  - uid: 12421
+  - uid: 12413
     components:
     - type: Transform
       pos: -21.5,-27.5
       parent: 2
-  - uid: 12422
+  - uid: 12418
     components:
     - type: Transform
       pos: -21.5,-28.5
@@ -126461,10 +126535,20 @@ entities:
     - type: Transform
       pos: 52.5,-20.5
       parent: 2
-  - uid: 12413
+  - uid: 12421
     components:
     - type: Transform
-      pos: 28.5,-29.5
+      pos: 33.5,-29.5
+      parent: 2
+  - uid: 24184
+    components:
+    - type: Transform
+      pos: 27.5,-29.5
+      parent: 2
+  - uid: 24185
+    components:
+    - type: Transform
+      pos: 33.5,-38.5
       parent: 2
 - proto: SpeedLoaderMagnum
   entities:
@@ -132631,13 +132715,6 @@ entities:
     - type: Transform
       pos: 7.4784074,23.484753
       parent: 15658
-- proto: ToolboxGoldFilled
-  entities:
-  - uid: 7256
-    components:
-    - type: Transform
-      pos: -9.521576,-21.399467
-      parent: 2
 - proto: ToolboxMechanicalFilled
   entities:
   - uid: 944
@@ -152604,6 +152681,13 @@ entities:
     - type: Transform
       pos: 40.483257,-24.615412
       parent: 2
+- proto: WeaponRifleFoam
+  entities:
+  - uid: 4286
+    components:
+    - type: Transform
+      pos: -10.480145,-23.152386
+      parent: 2
 - proto: WeaponRifleLecter
   entities:
   - uid: 20498
@@ -152629,13 +152713,6 @@ entities:
     - type: Physics
       canCollide: False
     - type: InsideEntityStorage
-- proto: WeaponShotgunEnforcerRubber
-  entities:
-  - uid: 604
-    components:
-    - type: Transform
-      pos: -10.519792,-23.226536
-      parent: 2
 - proto: WeaponTurretAllHostile
   entities:
   - uid: 21421
@@ -153236,6 +153313,13 @@ entities:
       rot: 1.5707963267948966 rad
       pos: -1.5,33.5
       parent: 15658
+- proto: WindoorSecurePlasma
+  entities:
+  - uid: 24182
+    components:
+    - type: Transform
+      pos: -7.5,-22.5
+      parent: 2
 - proto: WindoorSecureSalvageLocked
   entities:
   - uid: 17410
