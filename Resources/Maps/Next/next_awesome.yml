@@ -132601,7 +132601,7 @@ entities:
   - uid: 5906
     components:
     - type: MetaData
-      name: Скибиди
+      name: Туалет
     - type: Transform
       rot: 3.141592653589793 rad
       pos: -32.5,59.5
